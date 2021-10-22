@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Write a JavaScript program to check whether a given Number is within 20 of 100 or 400.
+  </title>
+</head>
+<body>
+  <h1>Write a JavaScript program to check whether a given Number is within 20 of 100 or 400.
+  </h1>
+<script>
+function testhundred(x) {
+  return ((Math.abs(100 - x) <= 20) ||
+	 (Math.abs(400 - x) <= 20));
+}
+
+document.write(testhundred(10) + "<br>");
+document.write(testhundred(90) + "<br>");
+document.write(testhundred(99) + "<br>");
+document.write(testhundred(199) + "<br>");
+document.write(testhundred(200));
+</script>
+</body>
+</html>
